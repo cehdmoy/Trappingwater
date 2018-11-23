@@ -3,8 +3,9 @@ package algorith.opti;
 import algorith.TrappingWaterAlgorithm;
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
-
+@Ignore
 public class TrappingWaterAlgorithmCodePumpkingTest {
 
 	private static TrappingWaterAlgorithm TrappingWaterAlgorithm;

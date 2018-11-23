@@ -11,7 +11,19 @@ public class LeftResultTest {
 		Assert.assertEquals(0,result.length);
 	}
 
-	private int[] processData(int[] data) {
-		return new int[0];
+	@Test
+	public void gienDataWithJustOneElementWillReturnAnArrayWithSameElement() {
+		int[] data = {55};
+		int[] result = processData(data);
+		Assert.assertEquals(1,result.length);
+		Assert.assertEquals(55,result[0]);
+	}
+
+	private int[] processData(int[] data)
+	{
+		int[] result = new int[data.length];
+		if(result.length>0)
+		result[0]=data[0];
+		return result;
 	}
 }
